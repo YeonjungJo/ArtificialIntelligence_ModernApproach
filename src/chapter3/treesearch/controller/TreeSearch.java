@@ -19,7 +19,7 @@ public class TreeSearch {
 		tree.addChildNode(tree.getNode("4"), new Node("10"));
 		tree.addChildNode(tree.getNode("4"), new Node("11"));
 		tree.addChildNode(tree.getNode("4"), new Node("12"));
-		new BreadthFirstSearch().search(tree);
+		new BFS().search(tree);
 	}
 
 	public static void main(String[] args) {
