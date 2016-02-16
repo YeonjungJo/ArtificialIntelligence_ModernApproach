@@ -1,4 +1,4 @@
-package chapter3.treesearch.nodes;
+package chapter3.nodes;
 
 public interface ITree {
 

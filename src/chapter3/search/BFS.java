@@ -1,9 +1,9 @@
-package chapter3.treesearch.search;
+package chapter3.search;
 
 import java.util.LinkedList;
 
-import chapter3.treesearch.nodes.Node;
-import chapter3.treesearch.nodes.Tree;
+import chapter3.nodes.Node;
+import chapter3.nodes.Tree;
 
 public class BFS implements ISearch {
 

@@ -1,4 +1,4 @@
-package chapter3.treesearch.util;
+package chapter3.util;
 
 public class WarningMessage {
 	

@@ -1,8 +1,8 @@
-package chapter3.treesearch.nodes;
+package chapter3.nodes;
 
 import java.util.LinkedList;
 
-import chapter3.treesearch.util.WarningMessage;
+import chapter3.util.WarningMessage;
 
 public class Tree implements ITree {
 
@@ -50,6 +50,7 @@ public class Tree implements ITree {
 			nodeList.removeFirst();
 			if (n.getChildList() != null) nodeList.addAll(n.getChildList());
 		}
+
 		return null;
 	}
 

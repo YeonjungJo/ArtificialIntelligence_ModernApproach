@@ -1,6 +1,6 @@
-package chapter3.treesearch.search;
+package chapter3.search;
 
-import chapter3.treesearch.nodes.Tree;
+import chapter3.nodes.Tree;
 
 public class DLS extends AbstractDLS implements ISearch{
 

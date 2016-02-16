@@ -1,4 +1,4 @@
-package chapter3.treesearch;
+package chapter3;
 
 public class InformedSearch { // heuristic search
 

@@ -1,8 +1,8 @@
-package chapter3.treesearch;
+package chapter3;
 
-import chapter3.treesearch.nodes.Node;
-import chapter3.treesearch.nodes.Tree;
-import chapter3.treesearch.search.*;
+import chapter3.nodes.Node;
+import chapter3.nodes.Tree;
+import chapter3.search.*;
 
 public class UniformedSearch {
 	private Tree tree;
@@ -22,7 +22,7 @@ public class UniformedSearch {
 		tree.addChildNode(tree.getNode("4"), new Node("12"));
 		
 		new BFS();
-//		new BFS().start(tree);
+		new BFS().start(tree);
 //		new DFS().start(tree);
 //		new DLS(2).start(tree); // depth limit가 존재하는 depth-first search
 //		new IDS().start(tree);  // depth limit가 증가하는 depth-limited search
