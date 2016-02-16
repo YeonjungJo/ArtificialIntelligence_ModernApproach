@@ -21,10 +21,10 @@ public class UniformedSearch {
 		tree.addChildNode(tree.getNode("4"), new Node("11"));
 		tree.addChildNode(tree.getNode("4"), new Node("12"));
 		
-		new BFS();
+		new BFS().start(tree);
 //		new DFS().start(tree);
-		new DLS(2); // depth limit가 존재하는 depth-first search
-		new IDS().start(tree);  // depth limit가 증가하는 depth-limited search
+//		new DLS(2).start(tree); // depth limit가 존재하는 depth-first search
+//		new IDS().start(tree);  // depth limit가 증가하는 depth-limited search
 	}
 
 	public static void main(String[] args) {
