@@ -1,4 +1,4 @@
-package chapter3.treesearch.controller;
+package chapter3.treesearch.search;
 
 import java.util.LinkedList;
 

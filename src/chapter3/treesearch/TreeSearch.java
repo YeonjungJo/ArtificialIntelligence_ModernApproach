@@ -1,7 +1,8 @@
-package chapter3.treesearch.controller;
+package chapter3.treesearch;
 
 import chapter3.treesearch.nodes.Node;
 import chapter3.treesearch.nodes.Tree;
+import chapter3.treesearch.search.BFS;
 
 public class TreeSearch {
 	private Tree tree;
