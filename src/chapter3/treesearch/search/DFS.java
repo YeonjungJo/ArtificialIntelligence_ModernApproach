@@ -15,11 +15,13 @@ public class DFS implements ISearch {
 
 	@Override
 	public void search(Tree t) {
+		System.out.println("-- DEPTH_FIRST_SEARCH START --");
 		dfs.add(t.getRootNode());
 		while (!dfs.isEmpty()) {
 			expand();
 			printCurrentState();
 		}
+		System.out.println("-- SEARCH END --\n");
 	}
 
 	@Override
@@ -34,7 +36,7 @@ public class DFS implements ISearch {
 	@Override
 	public Node visit() {
 		Node n = dfs.getFirst();
-		System.out.println("Visit : " + n.getId());
+		System.out.print("Visit : " + String.format("%5s", n.getId()) + "  |  ");
 		dfs.removeFirst();
 		return n;
 	}

@@ -10,4 +10,7 @@ public interface INode {
 
 	public LinkedList<Node> getChildList();
 
+	public void setDepth(int depth);
+	
+	public int getDepth();
 }

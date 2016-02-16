@@ -15,11 +15,14 @@ public class BFS implements ISearch {
 
 	@Override
 	public void search(Tree t) {
+		System.out.println("-- BREADTH_FIRST_SEARCH START --");
 		bfs.add(t.getRootNode());
 		while (!bfs.isEmpty()) {
 			expand();
 			printCurrentState();
 		}
+		
+		System.out.println("-- SEARCH END --\n");
 	}
 
 	@Override
@@ -32,7 +35,7 @@ public class BFS implements ISearch {
 	@Override
 	public Node visit() {
 		Node n = bfs.getFirst();
-		System.out.println("Visit : " + n.getId());
+		System.out.print("Visit : " + String.format("%5s", n.getId()) + "  |  ");
 		bfs.removeFirst();
 		return n;
 	}

@@ -3,6 +3,9 @@ package chapter3.treesearch;
 import chapter3.treesearch.nodes.Node;
 import chapter3.treesearch.nodes.Tree;
 import chapter3.treesearch.search.BFS;
+import chapter3.treesearch.search.DFS;
+import chapter3.treesearch.search.DLS;
+import chapter3.treesearch.search.IDS;
 
 public class TreeSearch {
 	private Tree tree;
@@ -20,7 +23,11 @@ public class TreeSearch {
 		tree.addChildNode(tree.getNode("4"), new Node("10"));
 		tree.addChildNode(tree.getNode("4"), new Node("11"));
 		tree.addChildNode(tree.getNode("4"), new Node("12"));
+		
 		new BFS().search(tree);
+		new DFS().search(tree);
+		new IDS().search(tree);
+		new DLS(2).search(tree);
 	}
 
 	public static void main(String[] args) {
