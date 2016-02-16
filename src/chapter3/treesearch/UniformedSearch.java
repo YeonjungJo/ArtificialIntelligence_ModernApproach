@@ -2,15 +2,12 @@ package chapter3.treesearch;
 
 import chapter3.treesearch.nodes.Node;
 import chapter3.treesearch.nodes.Tree;
-import chapter3.treesearch.search.BFS;
-import chapter3.treesearch.search.DFS;
-import chapter3.treesearch.search.DLS;
-import chapter3.treesearch.search.IDS;
+import chapter3.treesearch.search.*;
 
-public class TreeSearch {
+public class UniformedSearch {
 	private Tree tree;
 
-	public TreeSearch() {
+	public UniformedSearch() {
 		tree = new Tree("ROOT");
 		tree.addChildNode(tree.getRootNode(), new Node("2"));
 		tree.addChildNode(tree.getRootNode(), new Node("3"));
@@ -26,11 +23,11 @@ public class TreeSearch {
 		
 		new BFS().search(tree);
 		new DFS().search(tree);
-		new IDS().search(tree);
-		new DLS(2).search(tree);
+		new DLS(2).search(tree); // depth limit가 존재하는 depth-first search
+		new IDS().search(tree); // depth limit가 증가하는 depth-limited search
 	}
 
 	public static void main(String[] args) {
-		new TreeSearch();
+		new UniformedSearch();
 	}
 }
