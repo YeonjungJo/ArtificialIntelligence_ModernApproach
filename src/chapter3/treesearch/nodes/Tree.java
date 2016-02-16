@@ -8,7 +8,7 @@ public class Tree implements ITree {
 	private int maximumDepth = 0;
 
 	public Tree(String rootId) {
-		root = new Node(rootId);
+		root = new Node(rootId, 0);
 	}
 
 	@Override
