@@ -6,4 +6,5 @@ public interface ITree {
 
 	public void addChildNode(Node parentNode , Node childNode);
 
+	public Node getNode(String id);
 }
