@@ -2,7 +2,7 @@ package chapter3.search;
 
 import chapter3.nodes.Tree;
 
-public class DFS extends AbstractDLS implements ISearch{
+public class DFS extends DLS implements ISearch {
 
 	public DFS() {
 		setLimit(Integer.MAX_VALUE);

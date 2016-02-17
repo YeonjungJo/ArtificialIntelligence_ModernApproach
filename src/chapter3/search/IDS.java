@@ -2,7 +2,7 @@ package chapter3.search;
 
 import chapter3.nodes.Tree;
 
-public class IDS extends AbstractDLS implements ISearch {
+public class IDS extends DLS implements ISearch {
 
 	@Override
 	public void start(Tree t) {
